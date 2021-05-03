@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-02T23:40:48 IST" name="Default suite" finished-at="2021-05-02T23:41:30 IST" duration-ms="41531">
+    <groups>
+    </groups>
+    <test started-at="2021-05-02T23:40:48 IST" name="Default test" finished-at="2021-05-02T23:41:30 IST" duration-ms="41531">
+      <class name="com.qa.crm.testCases.HomePageTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:40:48 IST" name="Setup" finished-at="2021-05-02T23:41:01 IST" duration-ms="12677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="HomePageTitleTest()[pri:1, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:01 IST" name="HomePageTitleTest" finished-at="2021-05-02T23:41:01 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTitleTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:01 IST" name="TearDown" finished-at="2021-05-02T23:41:02 IST" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:02 IST" name="Setup" finished-at="2021-05-02T23:41:14 IST" duration-ms="12068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="crmUserNameTest()[pri:2, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:14 IST" name="crmUserNameTest" finished-at="2021-05-02T23:41:14 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crmUserNameTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:14 IST" name="TearDown" finished-at="2021-05-02T23:41:15 IST" duration-ms="803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:15 IST" name="Setup" finished-at="2021-05-02T23:41:28 IST" duration-ms="12900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="VerifyContactLinkTest()[pri:3, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:28 IST" name="VerifyContactLinkTest" finished-at="2021-05-02T23:41:29 IST" duration-ms="1334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContactLinkTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.crm.testCases.HomePageTest@77eca502]" started-at="2021-05-02T23:41:29 IST" name="TearDown" finished-at="2021-05-02T23:41:30 IST" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.qa.crm.testCases.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
