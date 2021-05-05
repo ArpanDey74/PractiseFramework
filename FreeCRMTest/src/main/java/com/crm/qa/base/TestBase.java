@@ -20,7 +20,7 @@ public class TestBase {
 		prop = new Properties();
 		FileInputStream file;
 		try {
-			file = new FileInputStream("/Users/arpand214/eclipse-workspace/FreeCRMTest/src/main/java/com/crm/qa/config/config.properties");
+			file = new FileInputStream("/Users/arpan/git/PractiseFramework/FreeCRMTest/src/main/java/com/crm/qa/config/config.properties");
 			prop.load(file);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -32,7 +32,7 @@ public class TestBase {
 	public static void initialization() {
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver","/Users/arpand214/Downloads/chromedriver_win32/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","/Users/arpan/Downloads/ChromeDriver/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
