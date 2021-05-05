@@ -3,6 +3,7 @@ package com.qa.crm.testCases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
@@ -33,12 +34,16 @@ public class ContactsPageTest extends TestBase{
 		contactsPage = homePage.clickonContactsLink();
 	}
 	
+	@DataProvider
+	public Object[][] getTestData() {
+		Object[][] data = TestUtil.getTestData("Contacts");
+		return data;
+	}
 	
-	
-	@Test
-	public void ValidateCreateNewContact() {
+	@Test(dataProvider ="getTestData")
+	public void ValidateCreateNewContact(String title, String firstname, String lastname, String company){
 		homePage.clickonNewContactsLink();	
-		contactsPage.createNewContacts("Mr.", "Arrr", "Dyyy", "Google");
+		contactsPage.createNewContacts(title, firstname, lastname, company);
 	}
 	
 	

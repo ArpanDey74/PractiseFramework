@@ -2,11 +2,11 @@ package com.crm.qa.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
@@ -30,6 +30,11 @@ public class HomePage extends TestBase{
 	
 	 public HomePage() {
 		PageFactory.initElements(driver, this);
+	}
+	  
+
+	public WebElement contactsNewLocator() {
+		return driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"));
 	}
 
 	public String validateHomePageTitle() {
@@ -55,15 +60,23 @@ public class HomePage extends TestBase{
 		return new TaskPage();
 	}
 	
-	public void clickonNewContactsLink() {
+	public void clickonNewContactsLink(){
 		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.ignoring(ElementClickInterceptedException.class);
-		wait.until(drv -> contactsLink.isEnabled());
+		//wait.until(drv -> contactsNewLocator.isEnabled());
 		
 		
-		Actions action = new Actions(driver);
-		action.moveToElement(contactsLink).clickAndHold().build().perform();
+		
+		/*
+		 * Actions action = new Actions(driver);
+		 * action.moveToElement(contactsNewLocator()).build().perform();
+		 */
+		 
+		
+		String strJavaScript = "var element = arguments[0]; var mouseEventObj = document.createEvent('MouseEvents'); mouseEventObj.initEvent( 'mouseover', true, true ); element.dispatchEvent(mouseEventObj);"; 
+		((JavascriptExecutor) driver).executeScript(strJavaScript, contactsLink); 
+		
 		
 		newContactLink.click();
 	}
